@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271F2A682455B219007BC307 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F2A672455B219007BC307 /* LoginRequest.swift */; };
+		271F2A6A2455B38D007BC307 /* LoginValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F2A692455B38D007BC307 /* LoginValidation.swift */; };
+		271F2A6C2455B3BE007BC307 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F2A6B2455B3BE007BC307 /* ValidationResult.swift */; };
+		271F2A6E2455B571007BC307 /* LoginResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F2A6D2455B571007BC307 /* LoginResource.swift */; };
+		271F2A702455B771007BC307 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F2A6F2455B771007BC307 /* Common.swift */; };
+		271F2A722455B7C9007BC307 /* HttpUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F2A712455B7C9007BC307 /* HttpUtility.swift */; };
 		2751855C243AF74100EF4BCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2751855B243AF74100EF4BCD /* AppDelegate.swift */; };
 		2751855E243AF74100EF4BCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2751855D243AF74100EF4BCD /* SceneDelegate.swift */; };
 		27518560243AF74100EF4BCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2751855F243AF74100EF4BCD /* ViewController.swift */; };
 		27518563243AF74100EF4BCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27518561243AF74100EF4BCD /* Main.storyboard */; };
 		27518565243AF74700EF4BCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27518564243AF74700EF4BCD /* Assets.xcassets */; };
 		27518568243AF74700EF4BCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27518566243AF74700EF4BCD /* LaunchScreen.storyboard */; };
+		2753E1262455AFC300BC06D7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2753E1252455AFC300BC06D7 /* LoginViewModel.swift */; };
+		2753E1282455B06500BC06D7 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2753E1272455B06500BC06D7 /* LoginResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		271F2A672455B219007BC307 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		271F2A692455B38D007BC307 /* LoginValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidation.swift; sourceTree = "<group>"; };
+		271F2A6B2455B3BE007BC307 /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
+		271F2A6D2455B571007BC307 /* LoginResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResource.swift; sourceTree = "<group>"; };
+		271F2A6F2455B771007BC307 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		271F2A712455B7C9007BC307 /* HttpUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtility.swift; sourceTree = "<group>"; };
 		27518558243AF74100EF4BCD /* MVVM_Delegate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Delegate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2751855B243AF74100EF4BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2751855D243AF74100EF4BCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +38,8 @@
 		27518564243AF74700EF4BCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27518567243AF74700EF4BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27518569243AF74700EF4BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2753E1252455AFC300BC06D7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2753E1272455B06500BC06D7 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,79 @@
 		2751855A243AF74100EF4BCD /* MVVM_Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				2751855B243AF74100EF4BCD /* AppDelegate.swift */,
+				2753E1242455AA9300BC06D7 /* Services */,
+				2753E1232455AA7E00BC06D7 /* Validation */,
+				2753E1222455AA7000BC06D7 /* DataResources */,
+				2753E1212455AA6600BC06D7 /* Common */,
+				2753E11F2455AA3D00BC06D7 /* Model */,
+				2753E11E2455AA2E00BC06D7 /* View */,
+				2753E1202455AA4700BC06D7 /* ViewModel */,
 				2751855D243AF74100EF4BCD /* SceneDelegate.swift */,
-				2751855F243AF74100EF4BCD /* ViewController.swift */,
+				2751855B243AF74100EF4BCD /* AppDelegate.swift */,
 				27518561243AF74100EF4BCD /* Main.storyboard */,
 				27518564243AF74700EF4BCD /* Assets.xcassets */,
 				27518566243AF74700EF4BCD /* LaunchScreen.storyboard */,
 				27518569243AF74700EF4BCD /* Info.plist */,
 			);
 			path = MVVM_Delegate;
+			sourceTree = "<group>";
+		};
+		2753E11E2455AA2E00BC06D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2751855F243AF74100EF4BCD /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2753E11F2455AA3D00BC06D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2753E1272455B06500BC06D7 /* LoginResponse.swift */,
+				271F2A672455B219007BC307 /* LoginRequest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2753E1202455AA4700BC06D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2753E1252455AFC300BC06D7 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2753E1212455AA6600BC06D7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				271F2A6F2455B771007BC307 /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2753E1222455AA7000BC06D7 /* DataResources */ = {
+			isa = PBXGroup;
+			children = (
+				271F2A6D2455B571007BC307 /* LoginResource.swift */,
+			);
+			path = DataResources;
+			sourceTree = "<group>";
+		};
+		2753E1232455AA7E00BC06D7 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				271F2A692455B38D007BC307 /* LoginValidation.swift */,
+				271F2A6B2455B3BE007BC307 /* ValidationResult.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		2753E1242455AA9300BC06D7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				271F2A712455B7C9007BC307 /* HttpUtility.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +218,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2753E1262455AFC300BC06D7 /* LoginViewModel.swift in Sources */,
 				27518560243AF74100EF4BCD /* ViewController.swift in Sources */,
 				2751855C243AF74100EF4BCD /* AppDelegate.swift in Sources */,
+				271F2A6C2455B3BE007BC307 /* ValidationResult.swift in Sources */,
+				271F2A6A2455B38D007BC307 /* LoginValidation.swift in Sources */,
+				271F2A682455B219007BC307 /* LoginRequest.swift in Sources */,
 				2751855E243AF74100EF4BCD /* SceneDelegate.swift in Sources */,
+				271F2A6E2455B571007BC307 /* LoginResource.swift in Sources */,
+				271F2A702455B771007BC307 /* Common.swift in Sources */,
+				2753E1282455B06500BC06D7 /* LoginResponse.swift in Sources */,
+				271F2A722455B7C9007BC307 /* HttpUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

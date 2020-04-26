@@ -13,6 +13,7 @@
 		271F2A6E2455B571007BC307 /* LoginResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F2A6D2455B571007BC307 /* LoginResource.swift */; };
 		271F2A702455B771007BC307 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F2A6F2455B771007BC307 /* Common.swift */; };
 		271F2A722455B7C9007BC307 /* HttpUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F2A712455B7C9007BC307 /* HttpUtility.swift */; };
+		271F2A782455EFB1007BC307 /* LoginExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F2A772455EFB1007BC307 /* LoginExtension.swift */; };
 		2751855C243AF74100EF4BCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2751855B243AF74100EF4BCD /* AppDelegate.swift */; };
 		2751855E243AF74100EF4BCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2751855D243AF74100EF4BCD /* SceneDelegate.swift */; };
 		27518560243AF74100EF4BCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2751855F243AF74100EF4BCD /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		271F2A6D2455B571007BC307 /* LoginResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResource.swift; sourceTree = "<group>"; };
 		271F2A6F2455B771007BC307 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		271F2A712455B7C9007BC307 /* HttpUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtility.swift; sourceTree = "<group>"; };
+		271F2A772455EFB1007BC307 /* LoginExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExtension.swift; sourceTree = "<group>"; };
 		27518558243AF74100EF4BCD /* MVVM_Delegate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Delegate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2751855B243AF74100EF4BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2751855D243AF74100EF4BCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		271F2A762455EF93007BC307 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				271F2A772455EFB1007BC307 /* LoginExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2751854F243AF74100EF4BCD = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 		2753E11E2455AA2E00BC06D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				271F2A762455EF93007BC307 /* Extensions */,
 				2751855F243AF74100EF4BCD /* ViewController.swift */,
 			);
 			path = View;
@@ -227,6 +238,7 @@
 				2751855E243AF74100EF4BCD /* SceneDelegate.swift in Sources */,
 				271F2A6E2455B571007BC307 /* LoginResource.swift in Sources */,
 				271F2A702455B771007BC307 /* Common.swift in Sources */,
+				271F2A782455EFB1007BC307 /* LoginExtension.swift in Sources */,
 				2753E1282455B06500BC06D7 /* LoginResponse.swift in Sources */,
 				271F2A722455B7C9007BC307 /* HttpUtility.swift in Sources */,
 			);
